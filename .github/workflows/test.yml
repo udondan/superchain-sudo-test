@@ -9,11 +9,11 @@ on:
 
 jobs:
   test-sudo:
-    name: "Test sudo"
+    name: Test sudo
     runs-on: ubuntu-latest
     container:
       image: jsii/superchain:1-buster-slim
     steps:
-      - name: Install package
+      - name: Run command with sudo
         run: |
           sudo whoami
