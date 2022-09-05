@@ -16,4 +16,5 @@ jobs:
     steps:
       - name: Run command with sudo
         run: |
+          whoami
           sudo whoami
